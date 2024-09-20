@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            seat:'#FFFFFF80',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+    <header class="w-[80%] p-0 mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Home</a></li>
+                    <li> <a>About</a>
+                    </li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl">P-TIcket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li> <a>About</a>
+                    </li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end ">
+                  <a class="btn bg-[rgba(29, 209, 0, 0.4)]">Bus <img src="./images/bus-icon.png" alt=""></a>
+                </div>
+              </div>
+        </nav>
+        <div class="banner bg-[url('./images/banner.png')] bg-no-repeat bg-cover rounded-xl">
+          <div class=" relative flex flex-col justify-between items-center">
+            <h1 class=" pt-24 mt-10 text-[64px] font-extrabold"> <span class="text-white">End-to-End Travel with</span> </h1>
+              <h1 class="text-[64px] font-extrabold text-[#1DD100]">P Paribahan</span></h1>
+              <p class="pt-7  text-white">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+        
+              <button class="btn btn-active bg-[#1DD100] text-black mt-6 mb-44" onclick="window.location.href='#ticket'">Buy Tickets</button>
+          </div>
+           
+         </div>
+        
+          <div class="bg-white rounded-xl absolute bottom-4 p-7">
+     
+            <div class="flex justify-around items-center">
+              <img src="./images/people.png" alt="">
+              <div>
+                <h1>500k+</h1>
+                <p>Registered Users</p>
+              </div>
+            </div>
+
+              </div>
+            </div>
+            <div class="bg-white rounded-xl absolute  bottom-5 p-8">
+              <div class="flex justify-around items-center">
+                <img src="./images/ticket-cupon.png" alt="">
+                <div>
+                  <h1>1.7lacks</h1>
+                  <p>Ticket coupons sold</p>
+                </div>
+              </div>
+            </div>
+           
+            <div class="bg-white rounded-xl absolute bottom-4 -left-40 p-8">
+            <div class="flex justify-around items-center">
+              <img src="./images/stoppage.png" alt="">
+              <div>
+                <h1>80k+</h1>
+                <p>Rental partens</p>
+          </div>
+          </div>
+         </div>
+    
+    </header>
+             <section class="w-[80%] mx-auto px-0 border-t-8 rounded-xl border-[#1DD100] mt-64" id="ticket">
+              <div class="grid grid-cols-3 gap-3 mt-8 ">
+                <div class="col-span-2 border-r-4 border-dashed p-3 ">
+               <h1 class="font-semibold text-2xl mb-5">Select Your Seat</h1>
+
+               <div class="flex justify-between items-center my-4 border-t-4 border-b-4 border-dashed ">
+                <h5 class="flex items-center mt-3 mb-6"><img src="./images/seat-gray.png" alt="">Available</h5>
+                <h5 class="flex items-center mt-3 mb-6"><img src="./images/seat-green.png" alt="">Available</h5>
+               </div>
+               <div class="grid grid-cols-12 gap-4 grid-rows-11 ">
+                <p class="col-span-11 "></p>
+                <button class="btn btn-active col-span-1 rounded-xl"><i class="fa-solid fa-dharmachakra text-black"></i></button>
+               
+                <button class="btn btn-active col-span-1 rounded-xl ">A</button>
+                <button class="btn btn-active col-span-2 rounded-xl">A1</button>
+                <button class=" btn btn-active col-span-2">A2</button>
+                <p class="col-span-3"></p>
+                <button class="btn btn-active col-span-2">A3</button>
+                <button class="btn btn-active col-span-2">A4</button>
+                <button class="btn btn-active col-span-1">B</button>
+                <button class=" btn btn-active col-span-2">B1</button>
+                <button class="btn btn-active col-span-2">B2</button>
+                <p class="col-span-3"></p>
+                <button class="btn btn-active col-span-2">B3</button>
+                <button class="btn btn-active  col-span-2">B4</button>
+                <button class="btn btn-active col-span-1">C</button>
+                <button class="btn btn-active col-span-2">C1</button>
+                <button class="btn btn-active col-span-2">C2</button>
+                <p class="col-span-3"></p>
+                <button class="btn btn-active col-span-2">C3</button>
+                <button class="btn btn-active col-span-2">C4</button>
+                <button class="btn btn-active col-span-1">D</button>
+                <button class="btn btn-active col-span-2">D1</button>
+                <button class="btn btn-active col-span-2">D2</button>
+                <p class="col-span-3"></p>
+                <button class="btn btn-active col-span-2">D3</button>
+                <button class="btn btn-active col-span-2">D4</button>
+                <button class="btn btn-active col-span-1">E</button>
+                <button class="btn btn-active col-span-2">E1</button>
+                <button class="btn btn-active col-span-2">E2</button>
+                <p class="col-span-3"></p>
+                <button class="btn btn-active col-span-2">E3</button>
+                <button class="btn btn-active col-span-2">E4</button>
+                <button class="btn btn-active col-span-1">F</button>
+                <button class="btn btn-active col-span-2">F1</button>
+                <button class="btn btn-active col-span-2">F2</button>
+                <p class="col-span-3"></p>
+                <button class="btn btn-active col-span-2">F3</button>
+                <button class="btn btn-active col-span-2">F4</button>
+                <button class="btn btn-active col-span-1">G</button>
+                <button class="btn btn-active col-span-2">G1</button>
+                <button class="btn btn-active col-span-2">G2</button>
+                <p class="col-span-3"></p>
+                <button class="btn btn-active col-span-2">G3</button>
+                <button class="btn btn-active col-span-2">G4</button>
+                <button class="btn btn-active col-span-1">H</button>
+                <button class="btn btn-active col-span-2">H1</button>
+                <button class="btn btn-active col-span-2">H2</button>
+                <p class="col-span-3"></p>
+                <button class="btn btn-active col-span-2">H3</button>
+                <button class="btn btn-active col-span-2">H4</button>
+                <button class="btn btn-active col-span-1">I</button>
+                <button class=" btn btn-active col-span-2">I1</button>
+                <button class="btn btn-active col-span-2">I2</button>
+                <p class="col-span-3"></p>
+                <button class="btn btn-active col-span-2">I3</button>
+                <button class="btn btn-active col-span-2">I4</button>
+                <button class="btn btn-active col-span-1">J</button>
+                <button class="btn btn-active col-span-2">J1</button>
+                <button class="btn btn-active col-span-2">J2</button>
+                <p class="col-span-3"></p>
+                <button class="btn btn-active col-span-2">J3</button>
+                <button class="btn btn-active col-span-2">J4</button>
+
+               </div>
+                </div>
+                <div>
+                  <h1 class="font-semibold text-2xl mb-5 p-4 border-b-4 border-dashed">Select Your Seat</h1>
+                  <div class="p-6">
+                    <div class="flex justify-between items-center gap-5 border-b-4 border-dashed m-3">
+                      <h1 class="">Seat</h1>
+                      <h1>class</h1>
+                      <h1>price</h1>
+                    </div>
+                    <div class="flex justify-between items-center gap-5">
+                      <h1>C2</h1>
+                      <h1>Economy</h1>
+                      <h1>550</h1>
+                    </div>
+                    <div class="flex justify-between items-center gap-5 border-b-4 my-3">
+                      <h1>C2</h1>
+                      <h1>Economy</h1>
+                      <h1>550</h1>
+                    </div>
+               <div class="flex justify-between items-center mt-3">
+                <h1>Total price</h1>
+                   <h1>BDT 1100</h1>
+              </div>
+              <div class="flex items-center mt-3">
+                <input type="text" placeholder="Have any coupon?" class="p-2 w-full"> 
+                <button class="btn bg-[#1DD100] text-white">Apply</button>
+              </div>
+               
+              <div class="form-control">
+                <label class="label mt-3">
+                  <span class="label-text">Passenger Name*</span>
+                </label>
+                <input type="email" placeholder="Enter Your Name" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label mt-3">
+                  <span class="label-text">Phone Number</span>
+                </label>
+                <input type="number" placeholder="Enter Your Phone Number" id="phn-no" class="input input-bordered" required oninput="check()"/>
+                <label class="label">
+                  <span class="label-text">Email</span>
+                </label>
+                <input type="number" placeholder="Enter Your Email Number" class="input input-bordered" required />
+
+                <button class="btn bg-[#1DD100] text-white mt-4 " disabled id="nxt-btn" onclick="another()">Next</button>
+                <div class="flex justify-between mt-5">
+                  <a href="">Terms and conditions</a>
+                  <a href="">Cancelletion policy</a>
+                </div>
+              </div>
+                  </div>
+                </div>
+
+              </div>
+             </section>
+   <script src="./js/utility.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
