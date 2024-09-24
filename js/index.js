@@ -11,3 +11,10 @@ function check(){
  function another(){
      window.location.href='success.html'
  }
+   
+ 
+  for(let i=0;i<40;i++){
+toggle(i);
+  }
+   
+  element('coupon').value==='MR30' 
