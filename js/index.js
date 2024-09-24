@@ -8,13 +8,16 @@ function check(){
   element('nxt-btn').disabled=true;
 }
 
- function another(){
-     window.location.href='success.html'
- }
-   
+   element('nxt-btn').addEventListener('click',function(){
+       element('my_modal').showModal();
+   })
  
   for(let i=0;i<40;i++){
 toggle(i);
   }
    
-  element('coupon').value==='MR30' 
+  element('continuoue').addEventListener('click',function(){
+     element('my_modal').classList.remove('modal-box');
+     element('my_modal').style.display='none';
+  })
+  // element('coupon').value==='MR30' 
